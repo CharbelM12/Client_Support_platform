@@ -30,7 +30,8 @@ import config from "../configs/config";
       params:Joi.object().keys(categoryId)
     },
     updateCategory:{
-      params:Joi.object().keys(categoryId)
+      params:Joi.object().keys(categoryId),
+      body:Joi.object().keys(updateBody)
     },
     deleteCategory:{
       params:Joi.object().keys(categoryId)

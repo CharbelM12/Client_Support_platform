@@ -12,6 +12,7 @@ const categoryService=new CategoryService();
 
 class ComplaintService{ 
 async createComplaint(reqBody:complaint,userId:mongoose.Schema.Types.ObjectId):Promise<void>{
+    //for every categoryId a check was done to make sure it is a valid categoryId
     for (const categoryId of reqBody.categoryIds!) {
         const category = await categoryService.getCategoryDetails(categoryId.toString())    
     }

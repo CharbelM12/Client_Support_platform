@@ -15,5 +15,4 @@ app.use(errorMiddleware);
 
 server.listen(config.port,async ()=>{
 await connect()
-console.log(`Connected to port ${config.port}`)
 })
