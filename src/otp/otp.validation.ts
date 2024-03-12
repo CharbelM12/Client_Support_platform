@@ -14,7 +14,7 @@ import otpConfig from "./otp.config";
  }
  const resetPasswod={
     email:Joi.string().required(),
-    verificationToken:Joi.string().regex(config.validation.regexValue).required(),
+    verificationToken:Joi.string().required(),
     newPassword:Joi.string().required(),
  }
 

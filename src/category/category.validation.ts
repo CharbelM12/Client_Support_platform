@@ -10,7 +10,7 @@ import config from "../configs/config";
     description:Joi.string().optional()
   }
   const categoryId={
-    categoryId: Joi.string().regex(config.validation.regexValue)
+    categoryId: Joi.string().regex(config.validation.regexValue).required()
   }
   const userId={
     userId: Joi.string().regex(config.validation.regexValue)
