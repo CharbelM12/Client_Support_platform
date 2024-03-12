@@ -1,0 +1,23 @@
+export default{
+    defaultValues:{
+        retryCountDefaultValue:0,
+    },
+    otp:{
+        length:4,
+        charset:"numeric",
+        type:"forgotPassword",
+    },
+    mailOptions:{
+        from:"mounayercharbel07@gmail.com"
+    },
+    verificationToken:{
+        format:"hex",
+    },
+    maxValues:{
+        retryCountMaxValue:5,
+    },
+    validation:{
+        otpMinValue:1000,
+        otpMaxValue:9999,
+    }
+}
